@@ -1,6 +1,8 @@
 
 #This will ask you to input the group name then list out the First, Last and CE#
 
+import-module ActiveDirectory
+
 $groupName = Read-Host "Enter the account name."
 
 $infoMember = Get-AdgroupMember "$groupName"
